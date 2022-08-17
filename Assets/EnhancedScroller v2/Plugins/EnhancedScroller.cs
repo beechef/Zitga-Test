@@ -529,6 +529,7 @@ namespace EnhancedUI.EnhancedScroller
                 // set the horizontal position
                 _scrollRect.horizontalNormalizedPosition = scrollPositionFactor;
             }
+
         }
 
         /// <summary>
@@ -931,6 +932,8 @@ namespace EnhancedUI.EnhancedScroller
         /// The list of cell views that are currently being displayed
         /// </summary>
         private SmallList<EnhancedScrollerCellView> _activeCellViews = new SmallList<EnhancedScrollerCellView>();
+
+        public SmallList<EnhancedScrollerCellView> ActiveCellViews => _activeCellViews;
 
         /// <summary>
         /// The index of the first cell view that is being displayed
@@ -1488,9 +1491,9 @@ namespace EnhancedUI.EnhancedScroller
             // set the containers anchor and pivot
             if (scrollDirection == ScrollDirectionEnum.Vertical)
             {
-                _container.anchorMin = new Vector2(0, 0);
-                _container.anchorMax = new Vector2(1, 0);
-                _container.pivot = new Vector2(0.5f, 0);
+                _container.anchorMin = new Vector2(0, 1);
+                _container.anchorMax = new Vector2(1, 1);
+                _container.pivot = new Vector2(0.5f, 1);
             }
             else
             {

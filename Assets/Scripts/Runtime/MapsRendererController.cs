@@ -1,4 +1,6 @@
-﻿using System.Runtime.CompilerServices;
+﻿using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using DG.Tweening;
 using EnhancedUI.EnhancedScroller;
 using UnityEngine;
 
