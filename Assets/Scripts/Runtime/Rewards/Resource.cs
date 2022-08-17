@@ -1,7 +1,7 @@
 ﻿namespace Runtime.Rewards
 {
     [System.Serializable]
-    public class Reward
+    public class Resource
     {
         public int id;
         public int type;

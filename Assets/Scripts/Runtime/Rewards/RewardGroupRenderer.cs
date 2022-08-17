@@ -11,7 +11,7 @@ namespace Runtime.Rewards
         [SerializeField] private List<RewardRenderer> rewardRenderers;
         public List<RewardRenderer> RewardRenderers => rewardRenderers;
 
-        public void Render(List<Reward> rewards, int startIndex)
+        public void Render(List<Resource> rewards, int startIndex)
         {
             startIndex *= MaxElement;
 
